@@ -1,0 +1,180 @@
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+
+  color: #ffffff;
+}
+
+.container {
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.navigation-bar {
+  height: 50px;
+
+  background-color: black;
+}
+
+.nav-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.company-logo {
+  height: 30px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 50px;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+/* HEADER */
+.main-header {
+  height: 100vh;
+  background-image: url(/assets/header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.main-header-overlay {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: black;
+  opacity: 0.5;
+}
+.main-header-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header-content {
+  height: 215px;
+  width: 100%;
+  max-width: 480px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  z-index: 1;
+}
+
+.main-header-heading {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main-header-description {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main-header-button {
+  height: 40px;
+  width: 160px;
+
+  border: 3px solid #ffffff;
+  background-color: #c4c4c400;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.main-header-button:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: 1s;
+}
+
+/* OUR CREW */
+
+.our-crew-section {
+  padding: 50px 0;
+}
+.our-crew-h2 {
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-bottom: 50px;
+}
+
+.person-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  flex-shrink: 0;
+}
+
+.person1-image {
+  background-image: url(assets/spec1.jpg);
+}
+
+.person2-image {
+  background-image: url(assets/spec2.jpg);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  margin-bottom: 50px;
+}
+
+.person:nth-last-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+.person-description {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.person-name {
+  font-size: 18px;
+  font-weight: 700;
+}

@@ -1,0 +1,12 @@
+@media screen and (min-width: 769px) {
+  /* GLOBAL */
+  .container {
+    width: calc(100% - 32px);
+  }
+
+  /* HEADER */
+  .main-header-content {
+    width: 50%;
+    max-width: none;
+  }
+}
